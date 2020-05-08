@@ -41,6 +41,108 @@ table {
   border-collapse: collapse; /*td跟td之間重疊合併在一起*/
   border-spacing: 0; /*距離0px*/
 }
-*, *:before, *:after {
-  box-sizing: border-box;
+*, *::before, *::after {
+box-sizing: border-box;
 }
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.container {
+  font-family: 'PingFang TC', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.mb-48 {
+  margin-bottom: 48px;
+}
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 45px;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #000;
+}
+.title span {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #A00404;
+  margin-left: 16px;
+}
+/* ----------------header---------------- */
+.header h1 {
+  font-family: 'Andale Mono',sans-serif;
+  font-size: 80px;
+  line-height: 90px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 24px;
+  margin: 48px 0;
+}
+.header img {
+  display: block;
+  /* margin-bottom: 48px; */
+}
+/* ----------------profile---------------- */
+.pro_content {
+  padding-left: 48px;
+  /* 讓偽元素以 ul 做為定位點 */
+  position: relative;
+}
+.pro_info {
+  /* font-family: 'PingFang TC', sans-serif; */
+  font-size: 24px;
+  line-height: 36px;
+}
+.pro_info::before {
+  content: "";
+  /* 偽元素需設定成絕對位置 */
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #96A9C4;
+  border-radius: 50%;
+  left: 16px;
+  top: 8px;
+}
+.pro_info p {
+  padding-bottom: 24px;
+}
+/* ----------------education---------------- */
+  .timeLine li {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 32px;
+    padding-left: 48px;
+    /* 讓偽元素以 ul 做為定位點 */
+    position: relative;
+  }
+  .timeLine li::before {
+    content: "";
+    /* 偽元素需設定成絕對位置 */
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #96A9C4;
+    border-radius: 50%;
+    left: 16px;
+    top: 8px;
+  }
+  .timeLine {
+    position: relative;
+  }
+  .timeLine::before {
+    content: "";
+    /* 偽元素需設定成絕對位置 */
+    position: absolute;
+    width: 1px;
+    background-color: #96A9C4;
+    top: 22px;
+    bottom: 22px;
+    /* 線條對準圓心，往左 16（切圓周）+ 8（圓半徑）= 24px */
+    left: 24px;
+  }
+  /* ----------------skills---------------- */
+/* ----------------experience---------------- */
+/* ----------------contact---------------- */
