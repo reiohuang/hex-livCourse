@@ -71,6 +71,7 @@ box-sizing: border-box;
   color: #A00404;
   margin-left: 16px;
 }
+
 /* ----------------header---------------- */
 .header h1 {
   font-family: 'Andale Mono',sans-serif;
@@ -82,20 +83,19 @@ box-sizing: border-box;
 }
 .header img {
   display: block;
-  /* margin-bottom: 48px; */
 }
 /* ----------------profile---------------- */
-.pro_content {
+.pro-content {
   padding-left: 48px;
   /* 讓偽元素以 ul 做為定位點 */
   position: relative;
 }
-.pro_info {
+.pro-info {
   /* font-family: 'PingFang TC', sans-serif; */
   font-size: 24px;
   line-height: 36px;
 }
-.pro_info::before {
+.pro-info::before {
   content: "";
   /* 偽元素需設定成絕對位置 */
   position: absolute;
@@ -106,43 +106,91 @@ box-sizing: border-box;
   left: 16px;
   top: 8px;
 }
-.pro_info p {
+.pro-info p {
   padding-bottom: 24px;
 }
 /* ----------------education---------------- */
-  .timeLine li {
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 32px;
-    padding-left: 48px;
-    /* 讓偽元素以 ul 做為定位點 */
-    position: relative;
-  }
-  .timeLine li::before {
-    content: "";
-    /* 偽元素需設定成絕對位置 */
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    background-color: #96A9C4;
-    border-radius: 50%;
-    left: 16px;
-    top: 8px;
-  }
-  .timeLine {
-    position: relative;
-  }
-  .timeLine::before {
-    content: "";
-    /* 偽元素需設定成絕對位置 */
-    position: absolute;
-    width: 1px;
-    background-color: #96A9C4;
-    top: 22px;
-    bottom: 22px;
-    /* 線條對準圓心，往左 16（切圓周）+ 8（圓半徑）= 24px */
-    left: 24px;
-  }
-  /* ----------------skills---------------- */
+.timeLine li {
+  font-size: 24px;
+  line-height: 36px;
+  padding-bottom: 32px;
+  padding-left: 48px;
+  position: relative;
+}
+.timeLine li::before {
+  content: "";
+  /* 偽元素需設定成絕對位置 */
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #96A9C4;
+  border-radius: 50%;
+  left: 16px;
+  top: 8px;
+}
+.timeLine {
+  position: relative;
+  margin-bottom: 40px;
+}
+.timeLine::before {
+  content: "";
+  /* 偽元素需設定成絕對位置 */
+  position: absolute;
+  width: 1px;
+  background-color: #96A9C4;
+  /* 設定 top 0px, bottom 0px 時，線條會剛好撐滿整個 ul 的高度 36+32+36=104px */
+  /* 線條往下縮減到切圓下緣，8 + 16(圓直徑) = 24px */
+  top: 24px;
+  /* 線條往上縮減到切圓上緣，32(padding bottom) + 12 + 16(圓直徑) = 28px */
+  bottom: 56px;
+  /* 線條對準圓心，往左 16（切圓周）+ 8（圓半徑）= 24px */
+  left: 24px;
+}
+/* ----------------skills---------------- */
+.skill {
+  position: relative;
+  height: 494px;
+  background-color: #415165;
+  color: #FFFFFF;
+  margin-bottom: 72px;
+}
+.skill h2 {
+  width: 996px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 45px;
+  text-align: center;
+  padding:24px 0 8px 0;
+  margin:0 auto 40px auto;
+  border-bottom: 1px solid #FFFFFF; 
+}
+.skill span {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  margin-left: 16px;
+}
+.skillList {
+  width: 216px;
+  padding-left: 24px;
+  border-left: 1px solid #96A9C4;
+	margin: 0 auto; 
+}
+.skillListItem {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: lighter;
+  margin-bottom: 16px;
+}
+.skill::after {
+  content: "";
+  position: absolute;
+  width: 1920px;
+  height: 360px;
+  background-color: #96A9C4;
+  left: -360px;
+  top: 70px;
+  z-index: -1;
+}
 /* ----------------experience---------------- */
 /* ----------------contact---------------- */
