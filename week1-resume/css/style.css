@@ -71,7 +71,25 @@ box-sizing: border-box;
   color: #A00404;
   margin-left: 16px;
 }
-
+.title2{
+  width: 996px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 45px;
+  color: #FFFFFF;
+  padding-bottom: 8px;
+  padding-top: 24px; 
+  border-bottom: 1px solid #FFFFFF;
+	text-align: center;
+  margin: 0 auto;
+} 
+.title2 span{
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-left: 16px;
+}
 /* ----------------header---------------- */
 .header h1 {
   font-family: 'Andale Mono',sans-serif;
@@ -155,26 +173,13 @@ box-sizing: border-box;
   margin-bottom: 72px;
 }
 .skill h2 {
-  width: 996px;
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 45px;
-  text-align: center;
-  padding:24px 0 8px 0;
-  margin:0 auto 40px auto;
-  border-bottom: 1px solid #FFFFFF; 
-}
-.skill span {
-  font-family: Roboto, sans-serif;
-  font-size: 24px;
-  line-height: 32px;
-  margin-left: 16px;
+  margin-bottom: 40px;
 }
 .skillList {
   width: 216px;
   padding-left: 24px;
   border-left: 1px solid #96A9C4;
-	margin: 0 auto; 
+	margin: 0 auto;
 }
 .skillListItem {
   font-size: 24px;
@@ -193,4 +198,55 @@ box-sizing: border-box;
   z-index: -1;
 }
 /* ----------------experience---------------- */
+.exp h2 {
+  margin-bottom: 22px;
+}
+.exp h3 {
+  font-size: 24px;
+  line-height: 36px;
+}
+.exp-content {
+  margin-left: 24px;
+  margin-bottom: 72px;
+  padding-left: 24px;
+  border-left: 1px solid #96A9C4;
+}
+.exp-content li {
+  font-weight: bold;
+  margin-bottom: 32px;
+
+}
+.exp-content p {
+  width: 642px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 30px;
+}
+.exp-content img {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: block;
+}
 /* ----------------contact---------------- */
+.contact {
+  width: 1920px;
+  /* height: 401px; */
+  background: #415165; 
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 22px;
+}
+.contact h2 {
+  margin-bottom: 32px;
+}
+.con-info{
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: lighter;
+}
+.con-info li{
+  margin-bottom: 16px;
+}
+.icon {
+  margin: 0 8px;
+}
