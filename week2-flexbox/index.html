@@ -5,59 +5,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>flexbox</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="header"></header>
+  <header class="header text-white bg-cover flex-center flex-column">
+    <div class="header-title">
+      <p>Here's</p>
+      <h1>JOANNE</h1>
+    </div>
+    <h3>
+      Founder of ‘’XXXD Official’’<br />
+      & Graphic Designer
+    </h3>
+    <ul class="socialMedia d-flex">
+      <li><a href="#"><img src="img/behance.svg" alt="Behance"></a></li>
+      <li><a href="#"><img src="img/facebook.svg" alt="Facebook"></a></li>
+      <li><a href="#"><img src="img/instagram.svg" alt="Instagram"></a></li>
+      <li><a href="#"><img src="img/youtube.svg" alt="Youtube"></a></li>
+    </ul>
+  </header>
   <main>
-    <section class="about"></section>
-    <section class="brand"></section>
-    <section class="work">
-      <h2></h2>
-      <p></p>
-      <ul>
-        <li>
-          <img src="" alt="">
-          <p></p>
-        </li>
-        <li>
-          <img src="" alt="">
-          <p></p>
-        </li>
-        <li>
-          <img src="" alt="">
-          <p></p>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <img src="" alt="">
-          <p></p>
-        </li>
-        <li>
-          <img src="" alt="">
-          <p></p>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <img src="" alt="">
-          <p></p>
-        </li>
-        <li>
-          <img src="" alt="">
-          <p></p>
-        </li>
-        <li>
-          <img src="" alt="">
-          <p></p>
-        </li>
+    <section class="about text-center flex-center flex-column">
+      <h2 class="title">About</h2>
+      <img src="img/photo.png" alt="">
+      <p>Joanne Chen</p>
+      <p>1997/10/10</p>
+      <p>
+        National Hex School Normal University<br>
+        Department of Visual Design
+      </p>
+      <ul class="experience">
+        <li><span>Founder of ‘’XXXD Official’’</span></li>
+        <li><span>Graphic Designer</span></li>
+        <li><span>Graphic Intern of Hex School</span></li>
       </ul>
     </section>
+    <section class="brand text-white text-center">
+      <h2 class="title mb-2">My Brand ‘’XXXD’’</h2>
+      <h3>Just Keep XXXD Everyday</h3>
+      <p class="text-p mb-6">
+        2020 年創立的個人服飾品牌<br />
+        引領叛逆少年開啟與社會對話的窗口<br />
+        主打概念潮流T-Shirt
+      </p>
+      <div class="brand-list flex-column flex-center">
+        <ul class="brand-list-item mb-5">
+          <li><img src="img/brand_img1.png" alt=""></li>
+        </ul>
+        <ul class="brand-list-item d-flex">
+          <li><img src="img/brand_img2.png" alt=""></li>
+          <li><img src="img/brand_img3.png" alt=""></li>
+        </ul>
+      </div>
+    </section>
+    <section class="work text-center">
+      <h2 class="title mb-3">Other Works</h2>
+      <p class="text-p mb-16">
+        2016-2020 年累積的作品</br>
+        海報/廣告/攝影/LOGO/3D
+      </p>
+      <div class="work-list bg-cover text-white flex-column flex-center">
+        <ul class="work-list-item mb-7 d-flex container">
+          <li>
+            <img src="img/work_img1.png" alt="">
+            <p class="text-p">海報設計/2017</p>
+          </li>
+          <li>
+            <img src="img/work_img2.png" alt="">
+            <p class="text-p">海報設計/2018</p>
+          </li>
+          <li>
+            <img src="img/work_img3.png" alt="">
+            <p class="text-p">海報設計/2018</p>
+          </li>
+        </ul>
+        <ul class="work-list-item mb-7 d-flex container">
+          <li>
+            <img src="img/work_img4.png" alt="">
+            <p class="text-p">概念攝影/2018</p>
+          </li>
+          <li>
+            <img src="img/work_img5.png" alt="">
+            <p class="text-p">概念攝影/2018</p>
+          </li>
+        </ul>
+        <ul class="work-list-item d-flex container">
+          <li>
+            <img src="img/work_img6.png" alt="">
+            <p class="text-p">sasa 酒標設計/2019</p>
+          </li>
+          <li>
+            <img src="img/work_img7.png" alt="">
+            <p class="text-p">攝影創作/2018</p>
+          </li>
+          <li>
+            <img src="img/work_img8.png" alt="">
+            <p class="text-p">官網設計/2020</p>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
-  <footer class="contact"></footer>
+  <footer class="contact text-center">
+    <h2 class="title mb-2">Contact</h2>
+    <p>Mail：xxxd@hexschool.com</p>
+    <p>Phone Number：0910123456</p>
+  </footer>
 </body>
 
 </html>

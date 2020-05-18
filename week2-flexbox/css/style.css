@@ -1,23 +1,143 @@
 body {
+  font-family: Roboto, sans-serif;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 42px;
+  font-style: italic;
+  font-weight: bold;
 }
-h1 {
-  font-size: 80px;
-  line-height: 94px;
-}
-.title {
-
-}
-.subtitle {
-
-}
-.mb-1 {
-  margin-bottom: 8px;
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 .mb-2 {
   margin-bottom: 16px;
 }
 .mb-3 {
+  margin-bottom: 24px;
+}
+.mb-5 {
+  margin-bottom: 40px;
+}
+.mb-6 {
+  margin-bottom: 48px;
+}
+.mb-7 {
   margin-bottom: 56px;
+}
+.mb-16 {
+  margin-bottom: 128px;
+}
+h1 {
+  font-size: 80px;
+  line-height: 94px;
+  margin-bottom: 32px;  
+}
+.title {
+  font-size: 64px;
+  line-height: 75px;
+  padding-top: 64px;
+}
+.text-p {
+  font-size: 20px;
+  line-height: 42px;
+}
+.text-white {
+  color: white;
+}
+.text-center {
+  text-align: center;
+}
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  background-image: url(../img/banner.png);
+  padding-top: 356px;
+  padding-bottom: 256px;
+}
+.header h3 {
+  margin-bottom: 48px;
+}
+.socialMedia img {
+  display: block;
+  margin: 0 8px;
+}
+.about img {
+  margin-top: 40px;
+  margin-bottom: 24px;
+  display: block;
+}
+.about p {
+  margin-bottom: 8px;
+}
+.about p:nth-last-of-type(1) {
+  margin-bottom: 12px;
+}
+.experience {
+  padding-top: 32px;
+  padding-bottom: 56px;
+  width: 384px;
+  border-top: 1px solid black;
+}
+.experience li span {
+  position: relative;
+}
+.experience li span:before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #891818;
+  left: -38px;
+  top: 5px;
+}
+.experience li:not(:last-child) {
+  margin-bottom:32px;
+}
+.brand {
+  background-color: black;
+  padding-bottom: 160px;
+}
+.brand h3 {
+  margin-bottom: 32px;
+}
+.brand-list-item img {
+  display: block;
+}
+.brand-list-item img:nth-last-of-type(1) {
+  margin-left: 24px;
+}
+.work {
+
+}
+.work-list {
+  background-image: url(../img/bg.png);
+  padding-bottom: 160px;
+}
+.work-list img {
+  display: block;
+  margin-bottom: 16px;
+}
+.bg-cover {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.work-list-item {
+  justify-content: space-between;
+}
+.work-list-item:first-child {
+  margin-top: -80px;
 }
