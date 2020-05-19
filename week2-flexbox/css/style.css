@@ -50,9 +50,6 @@ h1 {
 .d-flex {
   display: flex;
 }
-.flex-wrap {
-  flex-wrap: wrap;
-}
 .flex-column {
   flex-direction: column;
 }
@@ -113,12 +110,15 @@ h1 {
 .brand h3 {
   margin-bottom: 32px;
 }
-.brand-list-item img {
+.brand-list img {
   display: block;
 }
-.brand-list-item img:nth-last-of-type(1) {
-  margin-left: 24px;
+.brand-list-item {
+  justify-content: space-between;
 }
+/* .brand-list-item img:nth-last-of-type(1) {
+  margin-left: 24px;
+} */
 .work-list {
   background-image: url(../img/bg.png);
   padding-bottom: 160px;
@@ -137,4 +137,14 @@ h1 {
 }
 .work-list-item:first-child {
   margin-top: -80px;
+}
+.contact {
+  background-color: black;
+  padding-bottom: 60px;
+}
+.contact p {
+  line-height: 36px;
+}
+.contact p:not(:last-child) {
+  margin-bottom: 16px;
 }
