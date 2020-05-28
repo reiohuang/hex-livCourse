@@ -1,0 +1,246 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse; /*td跟td之間重疊合併在一起*/
+  border-spacing: 0; /*距離0px*/
+}
+*, *::before, *::after {
+box-sizing: border-box;
+}
+.wrap {
+  /* 1920px 是滿版寬的意思，可以不用設定 */
+  /* max-width: 1920px; */
+  margin: 0 auto;
+}
+.container {
+  font-family: 'PingFang TC', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.font-size{
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: lighter;
+}
+.mb-48 {
+  margin-bottom: 48px;
+}
+.section {
+  margin-bottom: 72px;
+}
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 45px;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #000;
+}
+.title span {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #A00404;
+  margin-left: 16px;
+}
+.title2{
+  width: 996px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 45px;
+  color: #FFFFFF;
+  padding-bottom: 8px;
+  padding-top: 24px; 
+  border-bottom: 1px solid #FFFFFF;
+	text-align: center;
+  margin: 0 auto;
+} 
+.title2 span{
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-left: 16px;
+}
+/* ----------------header---------------- */
+.header h1 {
+  font-family: 'Andale Mono',sans-serif;
+  font-size: 80px;
+  line-height: 90px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 24px;
+  margin: 48px 0;
+}
+.header img {
+  display: block;
+}
+/* ----------------profile---------------- */
+.pro-content {
+  padding-left: 48px;
+  /* 讓偽元素以 ul 做為定位點 */
+  position: relative;
+}
+.pro-info {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: lighter;
+}
+.pro-info::before {
+  content: "";
+  /* 偽元素需設定成絕對位置 */
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #96A9C4;
+  border-radius: 50%;
+  left: 16px;
+  top: 8px;
+}
+.pro-info p {
+  margin-bottom: 24px;
+}
+/* ----------------education---------------- */
+.timeLine li {
+  margin-bottom: 32px;
+  padding-left: 48px;
+  position: relative;
+}
+.timeLine li::before {
+  content: "";
+  /* 偽元素需設定成絕對位置 */
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #96A9C4;
+  border-radius: 50%;
+  left: 16px;
+  top: 8px;
+}
+.timeLine {
+  position: relative;
+  margin-bottom: 40px;
+}
+.timeLine::before {
+  content: "";
+  /* 偽元素需設定成絕對位置 */
+  position: absolute;
+  width: 1px;
+  background-color: #96A9C4;
+  /* 設定 top 0px, bottom 0px 時，線條會剛好撐滿整個 ul 的高度 36+32+36=104px */
+  /* 線條往下縮減到切圓下緣，8 + 16(圓直徑) = 24px */
+  top: 24px;
+  /* 線條往上縮減到切圓上緣，12 + 16(圓直徑) = 28px */
+  bottom: 28px;
+  /* 線條對準圓心，往左 16（切圓周）+ 8（圓半徑）= 24px */
+  left: 24px;
+}
+/* ----------------skills---------------- */
+.skill-bg{
+  position: relative; 
+}
+.skill-bg::after{
+  content: "";
+  position: absolute;
+  background: #96A9C4;
+  height: 360px;
+  width: 100%;
+  z-index: -1;
+  top: 70px;
+}
+.skill {
+  position: relative;
+  background-color: #415165;
+  color: #FFFFFF;
+  padding-bottom: 40px;
+}
+.skill h2 {
+  margin-bottom: 40px;
+}
+.skillList {
+  width: 216px;
+  padding-left: 24px;
+  border-left: 1px solid #96A9C4;
+	margin: 0 auto;
+}
+.skillList li {
+  margin-bottom: 16px;
+}
+/* ----------------experience---------------- */
+.exp h2 {
+  margin-bottom: -10px;
+}
+.exp-content {
+  margin-left: 24px;
+  padding-left: 24px;
+  border-left: 1px solid #96A9C4;
+}
+.exp-content li {
+  font-weight: bold;
+  margin-top: 32px;
+}
+.exp-content p {
+  width: 642px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 100;
+}
+.exp-content img {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: block;
+}
+/* ----------------contact---------------- */
+.contact {
+  /* 1920px 是滿版寬的意思，可以不用設定 */
+  /* width: 1920px; */
+  background: #415165; 
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 22px;
+}
+.contact h2 {
+  margin-bottom: 32px;
+}
+.font-size li{
+  margin-bottom: 16px;
+}
+.icon {
+  margin: 0 8px;
+}
