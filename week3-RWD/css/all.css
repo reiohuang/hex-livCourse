@@ -1,0 +1,10 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 840px;
+  background-image: url(./img/banner.png);
+  background-position: center center;
+}
