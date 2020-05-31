@@ -30,21 +30,21 @@ h1, h2, h3, h4, h5, h6 {
   border-style: cover;
 }
 
-.header-block {
+.banner {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.header-title {
+.banner-title {
   text-align: right;
 }
 
-.header-title h1 {
+.banner-title h1 {
   font-size: 64px;
 }
 
-.header-title h2 {
+.banner-title h2 {
   font-size: 36px;
 }
 
