@@ -41,6 +41,11 @@ table {
   border-collapse: collapse; /*td跟td之間重疊合併在一起*/
   border-spacing: 0; /*距離0px*/
 }
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%;
+  height: auto;
+}
 *, *::before, *::after {
   box-sizing: border-box;
 }
